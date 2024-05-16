@@ -9,7 +9,7 @@ body {
 
 h2 {
   text-align: center;
-  font-size: 48px;
+  font-size: 88px;
   font-weight: 500;
   width: 100%;
 }
@@ -56,7 +56,7 @@ h2 {
   transition: 0.25s;
   border-radius: 20px;
   padding: 1.2em;
-  flex-basis: 343px;
+  flex-basis: 500px;
 }
 
 .listicle .list-text {
@@ -138,5 +138,74 @@ footer {
 
   .form-section .photo-url {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .title-wrapper {
+    position: relative;
+    padding: 13% 0;
+    text-align: center;
+    max-height: 15%;
+    margin-bottom: 0px;
+    box-shadow: -4px 15px 26px 9px rgba(0, 0, 0, 0.58);
+  }
+
+  .title-wrapper .title {
+    font-size: 150px;
+  }
+  /* heading */
+  .heading {
+    width: 100%;
+    box-shadow: inset 3px -29px 36px 9px rgba(0, 0, 0, 0.78);
+  }
+
+  .heading img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+  }
+
+  /* lists */
+  .lists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  .lists .listicle {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: 0.25s;
+    border-radius: 20px;
+    padding: 1.2em;
+    flex-basis: 500px;
+  }
+
+  .listicle .list-text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    padding: 10px;
+  }
+
+  .list-text h3 {
+    font-size: 65px;
+    align-self: flex-start;
+  }
+
+  .listicle:hover {
+    box-shadow: inset 2px -57px 29px -61px rgba(204, 2, 100, 0.32);
+    transition: 0.25s;
+  }
+
+  .listicle:hover .list-text {
+    transition: 0.2s;
+    scale: 1.05;
+    border-bottom: 3px;
   }
 }
